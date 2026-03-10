@@ -1,38 +1,38 @@
 ---
 name: code-implementation
-description: Use esta skill para orientar implementacao de codigo em pequenos incrementos com evidencias de execucao, foco em contrato e regressao controlada.
+description: Use this skill to drive implementation in small increments with execution evidence, contract stability, and controlled regression risk.
 ---
 
 # Code Implementation
 
-## Quando Usar
+## When to use
 
-- inicio de implementacao de tarefa tecnica
-- refatoracao com risco de regressao
-- correcoes de bug com validacao obrigatoria
+- starting technical implementation
+- performing refactors with regression risk
+- delivering bug fixes that require strict validation
 
-## Entradas Minimas
+## Minimum inputs
 
-- tarefa com criterio de aceite
-- contratos tecnicos relevantes (API, schema, interface)
-- contexto de codigo existente
+- task with acceptance criteria
+- relevant technical contracts (API, schema, interface)
+- current code context
 
-## Procedimento
+## Procedure
 
-1. definir menor incremento funcional
-2. implementar mantendo compatibilidade de contrato
-3. adicionar/ajustar testes relevantes
-4. executar testes e registrar comandos
-5. produzir handoff com arquivos alterados e riscos
+1. define the smallest functional increment
+2. implement while preserving contract compatibility
+3. add/update relevant tests
+4. execute tests and record commands
+5. produce handoff with changed files and risks
 
-## Checklist de Entrega
+## Delivery checklist
 
-- [ ] criterio de aceite atendido
-- [ ] testes atualizados
-- [ ] sem quebra de contrato conhecida
-- [ ] evidencias de execucao registradas
+- [ ] acceptance criteria met
+- [ ] tests updated
+- [ ] no known contract break
+- [ ] execution evidence recorded
 
-## Regras
+## Rules
 
-- nao misturar melhorias nao solicitadas
-- preferir mudancas pequenas e revisaveis
+- do not mix unrelated improvements
+- prefer small, reviewable changes

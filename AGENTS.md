@@ -1,70 +1,70 @@
 # Codex Delivery Agents
 
-Este repositório define um sistema multiagente focado em entrega real de software no Codex.
+This repository defines a multi-agent system focused on real software delivery in Codex.
 
-## Objetivo
+## Goal
 
-Entregar software pronto para produção com fluxo explícito:
+Ship production-ready software with an explicit flow:
 
-1. entendimento de escopo
-2. decomposição em tarefas
-3. implementação
-4. validação técnica e funcional
-5. revisão final independente
+1. scope understanding
+2. task decomposition
+3. implementation
+4. technical and functional validation
+5. independent final review
 
-## Princípios
+## Principles
 
-- Priorizar execução sobre persona.
-- Toda tarefa precisa de critérios de aceite mensuráveis.
-- Todo handoff precisa de contexto mínimo obrigatório.
-- Nenhuma entrega é concluída sem reviewer final.
+- Prioritize execution over persona.
+- Every task must have measurable acceptance criteria.
+- Every handoff must include required minimum context.
+- No delivery is complete without final reviewer approval.
 
-## Estrutura
+## Structure
 
-- `agents/`: agentes principais e especialistas.
-- `agents/specialists/`: catalogo estendido de especialistas por divisao.
-- `skills/`: skills reutilizáveis (com `SKILL.md`).
-- `playbooks/`: protocolo de handoff e fluxo de revisão.
-- `examples/prompts/`: prompts prontos para ativação.
+- `agents/`: core and specialist agent profiles.
+- `agents/specialists/`: extended specialist catalog by division.
+- `skills/`: reusable skills (`SKILL.md`).
+- `playbooks/`: handoff protocol and final review flow.
+- `examples/prompts/`: ready-to-run activation prompts.
 
-## Agentes Principais (Core 8)
+## Core Agents (8)
 
-- `orchestrator`: coordena o fluxo ponta a ponta.
-- `product-planner`: converte objetivo de produto em backlog executável.
-- `solution-architect`: define arquitetura e decisões técnicas.
-- `backend-engineer`: implementa APIs, regras de negocio e persistencia.
-- `frontend-engineer`: implementa UI, estados e integracao com API.
-- `test-engineer`: valida funcionalidade, regressao e qualidade.
-- `devops-engineer`: pipeline, deploy e observabilidade.
-- `reviewer`: gate final de qualidade para liberar entrega.
+- `orchestrator`: coordinates end-to-end execution flow.
+- `product-planner`: turns product goals into executable backlog.
+- `solution-architect`: defines architecture and technical decisions.
+- `backend-engineer`: implements APIs, business logic, and persistence.
+- `frontend-engineer`: implements UI, state handling, and API integration.
+- `test-engineer`: validates functionality, regressions, and quality evidence.
+- `devops-engineer`: handles pipeline, deployment, and observability.
+- `reviewer`: final quality gate before merge/release.
 
-## Catalogo Estendido (68 especialistas)
+## Extended Specialist Catalog (68)
 
-- Local: `agents/specialists/`
-- Divisoes: design, engineering, marketing, product, project-management, support, testing, spatial-computing, specialized.
-- Indice: `agents/specialists/README.md`
-- Regra de uso: ativar sob demanda para tarefas de dominio especifico, mantendo o `orchestrator` como coordenador central.
+- Location: `agents/specialists/`
+- Divisions: `design`, `engineering`, `marketing`, `product`, `project-management`, `support`, `testing`, `spatial-computing`, `specialized`
+- Index: `agents/specialists/README.md`
+- Usage rule: activate specialists on demand for domain depth, while `orchestrator` remains the central coordinator.
 
-## Modo de Operacao
+## Operating Mode
 
-1. Acione `orchestrator` com contexto inicial do projeto.
-2. `orchestrator` distribui para `product-planner` e `solution-architect`.
-3. Implementacao paralela por `backend-engineer`, `frontend-engineer` e `devops-engineer` quando fizer sentido.
-4. `test-engineer` executa validacao e abre falhas se necessario.
-5. `reviewer` executa revisao final com base em evidencias.
-6. Se reprovado, retorna para o agente responsavel via handoff padrao.
+1. Activate `orchestrator` with initial project context.
+2. `orchestrator` routes planning to `product-planner` and `solution-architect`.
+3. Implementation runs in parallel across `backend-engineer`, `frontend-engineer`, and `devops-engineer` when appropriate.
+4. `test-engineer` validates acceptance and raises failures when needed.
+5. `reviewer` performs final independent gate.
+6. If rejected, work returns to the responsible owner through standard handoff.
 
-## Contrato de Handoff
+## Handoff Contract
 
-Todo repasse entre agentes deve seguir `playbooks/handoff-standard.md` e incluir:
+Every transfer between agents must follow `playbooks/handoff-standard.md` and include:
 
-- contexto e objetivo da tarefa
-- arquivos alterados
-- criterios de aceite
-- evidencias executadas
-- riscos e pendencias
-- proximo dono da acao
+- task context and objective
+- changed files
+- acceptance criteria
+- execution evidence
+- risks and pending items
+- next owner and expected action
 
-## Gate Final Obrigatorio
+## Mandatory Final Gate
 
-Nenhum trabalho e marcado como concluido sem passar pelo fluxo em `playbooks/final-review-flow.md`.
+No work is marked complete without passing `playbooks/final-review-flow.md`.

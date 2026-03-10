@@ -1,56 +1,56 @@
-# Prompts de Quickstart
+# Quickstart Prompts
 
-## 1) Iniciar projeto multiagente
+## 1) Start a multi-agent project
 
 ```text
-Ative o orchestrator deste repositório.
-Objetivo: construir uma API + frontend para cadastro e acompanhamento de pedidos.
-Prazo: 2 semanas.
-Restrições: stack TypeScript, Postgres, deploy em ambiente Linux.
-Siga AGENTS.md, gere backlog, arquitetura, implementação, QA e revisão final.
+Activate the orchestrator in this repository.
+Goal: build an API + frontend for order creation and tracking.
+Timeline: 2 weeks.
+Constraints: TypeScript stack, Postgres, Linux deployment environment.
+Follow AGENTS.md and run backlog, architecture, implementation, QA, and final review.
 ```
 
-## 2) Gerar backlog a partir de requisito
+## 2) Generate backlog from requirement
 
 ```text
-Ative product-planner.
-Converta este requisito em backlog priorizado com critérios de aceite testáveis:
-"Usuários devem criar pedidos, alterar status e visualizar histórico por cliente".
+Activate product-planner.
+Convert this requirement into a prioritized backlog with testable acceptance criteria:
+"Users must create orders, update order status, and view customer order history".
 ```
 
-## 3) Definir arquitetura
+## 3) Define architecture
 
 ```text
-Ative solution-architect.
-Com base no backlog atual, proponha arquitetura alvo, contratos de API e principais riscos técnicos.
+Activate solution-architect.
+Based on current backlog, propose target architecture, API contracts, and main technical risks.
 ```
 
-## 4) Implementar backend
+## 4) Implement backend
 
 ```text
-Ative backend-engineer.
-Implemente apenas as tarefas backend de prioridade alta.
-Inclua testes e prepare handoff no padrão de playbooks/handoff-standard.md.
+Activate backend-engineer.
+Implement only high-priority backend tasks.
+Include tests and prepare handoff using playbooks/handoff-standard.md.
 ```
 
-## 5) Implementar frontend
+## 5) Implement frontend
 
 ```text
-Ative frontend-engineer.
-Implemente o fluxo de criação e listagem de pedidos com tratamento de loading, erro e vazio.
-Inclua testes relevantes e handoff padrão.
+Activate frontend-engineer.
+Implement order creation and listing flow with loading, error, and empty states.
+Include relevant tests and standard handoff.
 ```
 
-## 6) Validar qualidade
+## 6) Validate quality
 
 ```text
-Ative test-engineer.
-Valide critérios de aceite, rode testes aplicáveis e classifique PASS ou FAIL com evidências.
+Activate test-engineer.
+Validate acceptance criteria, run applicable tests, and classify PASS or FAIL with evidence.
 ```
 
-## 7) Fazer gate final
+## 7) Execute final gate
 
 ```text
-Ative reviewer.
-Execute playbooks/final-review-flow.md e emita decisão APPROVED, CHANGES_REQUESTED ou BLOCKED.
+Activate reviewer.
+Run playbooks/final-review-flow.md and issue APPROVED, CHANGES_REQUESTED, or BLOCKED.
 ```

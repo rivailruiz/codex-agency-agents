@@ -8,8 +8,6 @@ Multi-agent system for software delivery in Codex.
 
 Built for execution: technical planning, implementation, validation, standardized handoffs, and final reviewer gate.
 
-Portuguese version: `README.pt-BR.md`.
-
 ## What you get
 
 - **76 total agents**:

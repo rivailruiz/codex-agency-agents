@@ -1,38 +1,38 @@
-# Prompts de Handoff e Review
+# Handoff and Review Prompts
 
-## 1) Solicitar handoff completo
+## 1) Request complete handoff
 
 ```text
-Prepare um handoff completo no formato playbooks/handoff-standard.md para o próximo agente.
-Inclua arquivos alterados, comandos executados, testes e riscos pendentes.
+Prepare a complete handoff using playbooks/handoff-standard.md.
+Include changed files, commands executed, tests, and pending risks.
 ```
 
-## 2) Reabrir tarefa após reprovação
+## 2) Reopen task after rejection
 
 ```text
-A revisão final retornou CHANGES_REQUESTED.
-Reabra somente os itens bloqueadores, sem expandir escopo.
-Depois gere novo handoff para test-engineer.
+Final review returned CHANGES_REQUESTED.
+Reopen only blocker items without expanding scope.
+Then produce a new handoff for test-engineer.
 ```
 
-## 3) Aplicar quality gate antes de reviewer
+## 3) Apply quality gate before reviewer
 
 ```text
-Use a skill quality-gate para avaliar esta entrega.
-Se houver ausência de evidência, marcar FAIL automaticamente.
+Use the quality-gate skill to evaluate this delivery.
+If evidence is missing, mark FAIL by default.
 ```
 
-## 4) Checar prontidão de release
+## 4) Check release readiness
 
 ```text
-Use a skill release-readiness.
-Avalie rollout, rollback, monitoramento e pendências críticas.
-Retorne READY ou NOT_READY com justificativa curta.
+Use the release-readiness skill.
+Evaluate rollout, rollback, monitoring, and critical pending items.
+Return READY or NOT_READY with a short rationale.
 ```
 
-## 5) Encaminhar para reviewer
+## 5) Forward package to reviewer
 
 ```text
-Orchestrator: consolide pacote final, anexe relatório do test-engineer e envie para reviewer.
-O reviewer deve decidir conforme playbooks/final-review-flow.md.
+Orchestrator: consolidate final package, attach test-engineer report, and send to reviewer.
+Reviewer must decide according to playbooks/final-review-flow.md.
 ```

@@ -1,39 +1,39 @@
 ---
 name: quality-gate
-description: Use esta skill para validar uma entrega com criterio objetivo de PASS/FAIL, cobrindo aceite, testes, risco e evidencias antes do reviewer final.
+description: Use this skill to evaluate a delivery with objective PASS/FAIL criteria across acceptance, tests, risk, and evidence before final reviewer gate.
 ---
 
 # Quality Gate
 
-## Quando Usar
+## When to use
 
-- apos implementacao de uma ou mais tarefas
-- antes de enviar para reviewer
-- para decidir retorno para correcoes
+- after implementation of one or more tasks
+- before sending package to reviewer
+- when deciding whether to loop back for fixes
 
-## Entradas Minimas
+## Minimum inputs
 
-- criterios de aceite
-- diff/arquivos alterados
-- resultados de testes
+- acceptance criteria
+- diff or changed files
+- test results
 
-## Procedimento
+## Procedure
 
-1. validar aceite item a item
-2. confirmar execucao de testes relevantes
-3. avaliar risco de regressao e operacao
-4. classificar severidade de problemas
-5. emitir resultado: PASS ou FAIL
+1. validate acceptance criteria item by item
+2. verify execution of relevant tests
+3. assess regression and operational risk
+4. classify issue severity
+5. issue final result: PASS or FAIL
 
-## Formato de Saida
+## Output format
 
-- `Resultado final: PASS/FAIL`
-- `Evidencias verificadas`
-- `Problemas encontrados`
-- `Severidade e impacto`
-- `Acoes necessarias`
+- `Final result: PASS/FAIL`
+- `Verified evidence`
+- `Issues found`
+- `Severity and impact`
+- `Required actions`
 
-## Regras
+## Rules
 
-- sem evidencias, status padrao e FAIL
-- problemas bloqueantes impedem avancar para reviewer
+- without evidence, default status is FAIL
+- blocker issues prevent progression to reviewer

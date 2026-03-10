@@ -1,46 +1,46 @@
-# Padrao de Handoff Entre Agentes
+# Standard Agent Handoff
 
-Use este formato para qualquer transferencia de trabalho.
+Use this format for any work transfer between agents.
 
 ## Template
 
 ```markdown
 # Handoff
 
-## Metadados
-- De:
-- Para:
-- Data:
-- Tarefa/Issue:
-- Prioridade:
+## Metadata
+- From:
+- To:
+- Date:
+- Task/Issue:
+- Priority:
 
-## Objetivo
-- Resultado esperado:
-- Criterios de aceite:
+## Objective
+- Expected result:
+- Acceptance criteria:
 
-## Contexto Tecnico
-- Resumo do que foi feito:
-- Arquivos alterados:
-- Decisoes tecnicas relevantes:
+## Technical Context
+- Summary of work completed:
+- Changed files:
+- Relevant technical decisions:
 
-## Evidencias
-- Comandos executados:
-- Testes executados:
-- Resultado dos testes:
+## Evidence
+- Commands executed:
+- Tests executed:
+- Test results:
 
-## Riscos e Pendencias
-- Riscos conhecidos:
-- Pendencias:
-- Mitigacoes sugeridas:
+## Risks and Pending Items
+- Known risks:
+- Pending items:
+- Suggested mitigations:
 
-## Proximo Passo
-- Acao esperada do proximo agente:
-- Definicao de pronto para este handoff:
+## Next Step
+- Expected action from next agent:
+- Definition of done for this handoff:
 ```
 
-## Regras de Qualidade do Handoff
+## Handoff Quality Rules
 
-- nunca encaminhar sem criterios de aceite explicitos
-- nunca omitir arquivos alterados
-- nao usar frases genericas como "testado" sem evidencias
-- informar claramente se ha bloqueio
+- never transfer without explicit acceptance criteria
+- never omit changed files
+- avoid generic statements like "tested" without evidence
+- state clearly if there is any blocker

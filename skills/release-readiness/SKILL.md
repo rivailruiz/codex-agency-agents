@@ -1,38 +1,38 @@
 ---
 name: release-readiness
-description: Use esta skill para checar prontidao de release com foco em risco operacional, rollback, observabilidade e pendencias criticas.
+description: Use this skill to check release readiness with focus on operational risk, rollback, observability, and critical pending items.
 ---
 
 # Release Readiness
 
-## Quando Usar
+## When to use
 
-- antes de merge para branch principal
-- antes de deploy de producao
-- em hotfix com impacto alto
+- before merge to main branch
+- before production deployment
+- during high-impact hotfixes
 
-## Entradas Minimas
+## Minimum inputs
 
-- changelog da entrega
-- status de testes
-- estrategia de deploy/rollback
+- delivery changelog
+- test status
+- deploy and rollback strategy
 
-## Procedimento
+## Procedure
 
-1. verificar bloqueadores conhecidos
-2. validar plano de rollout e rollback
-3. confirmar sinais minimos de observabilidade
-4. revisar impacto em usuarios e dependencia externa
-5. emitir decisao: READY ou NOT_READY
+1. review known blockers
+2. validate rollout and rollback plans
+3. confirm baseline observability signals
+4. review user impact and external dependencies
+5. issue decision: READY or NOT_READY
 
 ## Checklist
 
-- [ ] sem bloqueador aberto
-- [ ] rollback validado
-- [ ] monitoramento minimo definido
-- [ ] ownership de incidente claro
+- [ ] no open blocker
+- [ ] rollback validated
+- [ ] minimum monitoring defined
+- [ ] incident ownership is clear
 
-## Regras
+## Rules
 
-- se rollback nao estiver claro, classificar como NOT_READY
-- documentar pendencias com acao e dono
+- if rollback is not clear, classify as NOT_READY
+- document pending items with action and owner

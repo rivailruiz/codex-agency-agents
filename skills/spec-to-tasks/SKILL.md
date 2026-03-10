@@ -1,40 +1,40 @@
 ---
 name: spec-to-tasks
-description: Use esta skill quando for preciso converter uma especificacao de produto em backlog tecnico priorizado, com criterios de aceite objetivos e dependencias claras.
+description: Use this skill to convert product specifications into prioritized technical backlog items with objective acceptance criteria and clear dependencies.
 ---
 
 # Spec to Tasks
 
-## Quando Usar
+## When to use
 
-- requisito amplo ou ambiguidade de escopo
-- ausencia de backlog tecnico executavel
-- necessidade de alinhar produto e engenharia rapidamente
+- requirements are broad or ambiguous
+- there is no executable technical backlog
+- product and engineering need fast alignment
 
-## Entradas Minimas
+## Minimum inputs
 
-- objetivo do produto/feature
-- restricoes de prazo e escopo
-- estado atual do sistema
+- product/feature objective
+- scope and timeline constraints
+- current system state
 
-## Procedimento
+## Procedure
 
-1. extrair objetivo principal e nao objetivos
-2. quebrar em epicos e tarefas pequenas
-3. definir criterio de aceite testavel para cada tarefa
-4. mapear dependencias e riscos
-5. priorizar por impacto x risco x esforco
+1. extract primary goal and explicit non-goals
+2. break scope into epics and small tasks
+3. define testable acceptance criteria for each task
+4. map dependencies and risks
+5. prioritize by impact x risk x effort
 
-## Formato de Saida
+## Output format
 
-- `Objetivo`
-- `Backlog priorizado`
-- `Criterios de aceite por tarefa`
-- `Dependencias`
-- `Riscos`
-- `Perguntas em aberto`
+- `Goal`
+- `Prioritized backlog`
+- `Acceptance criteria per task`
+- `Dependencies`
+- `Risks`
+- `Open questions`
 
-## Regras
+## Rules
 
-- evitar tarefas vagas como "melhorar" ou "otimizar" sem metrica
-- evitar escopo extra sem relacao direta com objetivo
+- avoid vague tasks such as "improve" or "optimize" without measurable target
+- avoid extra scope not directly tied to the objective

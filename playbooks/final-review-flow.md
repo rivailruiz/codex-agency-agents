@@ -1,48 +1,48 @@
-# Fluxo de Revisao Final com Reviewer
+# Final Review Flow with Reviewer
 
-## Objetivo
+## Objective
 
-Definir o gate final para aprovar ou rejeitar uma entrega antes de merge/release.
+Define the mandatory final gate to approve or reject delivery before merge/release.
 
-## Etapas
+## Steps
 
-1. `orchestrator` consolida pacote final de handoff.
-2. `test-engineer` anexa evidencias e resultado PASS/FAIL.
-3. `reviewer` revisa criterios de aceite, riscos e impacto operacional.
-4. `reviewer` emite uma decisao:
-   - `APPROVED`: pode seguir para merge/release.
-   - `CHANGES_REQUESTED`: retornar ao agente responsavel com escopo de correcao.
-   - `BLOCKED`: existe risco impeditivo; exige decisao tecnica/gerencial.
-5. `orchestrator` atualiza status e decide proximo ciclo.
+1. `orchestrator` consolidates final handoff package.
+2. `test-engineer` attaches evidence and PASS/FAIL result.
+3. `reviewer` validates acceptance criteria, risk, and operational impact.
+4. `reviewer` issues one decision:
+   - `APPROVED`: ready for merge/release.
+   - `CHANGES_REQUESTED`: return to owner with scoped corrections.
+   - `BLOCKED`: release-preventing risk exists; requires technical/managerial decision.
+5. `orchestrator` updates status and routes next cycle.
 
-## Checklist do Reviewer
+## Reviewer Checklist
 
-- [ ] criterios de aceite atendidos
-- [ ] testes relevantes executados
-- [ ] regressao critica nao identificada
-- [ ] riscos residuais documentados
-- [ ] estrategia de rollback conhecida (quando aplicavel)
+- [ ] acceptance criteria are met
+- [ ] relevant tests were executed
+- [ ] no critical regression identified
+- [ ] residual risks are documented
+- [ ] rollback strategy is known (when applicable)
 
-## Politica de Reprovacao
+## Automatic Rejection Policy
 
-Reprovar automaticamente quando houver:
+Reject by default when any of the following is true:
 
-- falha em criterio de aceite critico
-- ausencia de evidencias de teste
-- risco de seguranca sem mitigacao
-- impacto operacional sem plano de rollback
+- critical acceptance criterion failed
+- missing test evidence
+- unmitigated security risk
+- operational impact without rollback plan
 
-## Formato de Decisao
+## Decision Format
 
 ```markdown
 # Reviewer Decision
 
 - Status: APPROVED | CHANGES_REQUESTED | BLOCKED
-- Resumo: <1 paragrafo objetivo>
-- Bloqueadores:
+- Summary: <short objective paragraph>
+- Blockers:
   - ...
-- Ajustes requeridos:
+- Required changes:
   - ...
-- Proximo dono:
-- Prazo sugerido:
+- Next owner:
+- Suggested due date:
 ```
