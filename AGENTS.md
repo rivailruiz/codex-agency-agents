@@ -27,15 +27,12 @@ Ship production-ready software with an explicit flow:
 - `playbooks/`: handoff protocol and final review flow.
 - `examples/prompts/`: ready-to-run activation prompts.
 
-## Core Agents (8)
+## Core Agents (5)
 
 - `orchestrator`: coordinates end-to-end execution flow.
 - `product-planner`: turns product goals into executable backlog.
 - `solution-architect`: defines architecture and technical decisions.
-- `backend-engineer`: implements APIs, business logic, and persistence.
-- `frontend-engineer`: implements UI, state handling, and API integration.
 - `test-engineer`: validates functionality, regressions, and quality evidence.
-- `devops-engineer`: handles pipeline, deployment, and observability.
 - `reviewer`: final quality gate before merge/release.
 
 ## Extended Specialist Catalog (68)
@@ -49,7 +46,7 @@ Ship production-ready software with an explicit flow:
 
 1. Activate `orchestrator` with initial project context.
 2. `orchestrator` routes planning to `product-planner` and `solution-architect`.
-3. Implementation runs in parallel across `backend-engineer`, `frontend-engineer`, and `devops-engineer` when appropriate.
+3. Implementation runs through engineering specialists in `agents/specialists/engineering/` (for example `engineering-backend-architect`, `engineering-frontend-developer`, `engineering-devops-automator`).
 4. `test-engineer` validates acceptance and raises failures when needed.
 5. `reviewer` performs final independent gate.
 6. If rejected, work returns to the responsible owner through standard handoff.

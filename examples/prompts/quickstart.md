@@ -28,7 +28,7 @@ Based on current backlog, propose target architecture, API contracts, and main t
 ## 4) Implement backend
 
 ```text
-Activate backend-engineer.
+Activate engineering-backend-architect.
 Implement only high-priority backend tasks.
 Include tests and prepare handoff using playbooks/handoff-standard.md.
 ```
@@ -36,19 +36,27 @@ Include tests and prepare handoff using playbooks/handoff-standard.md.
 ## 5) Implement frontend
 
 ```text
-Activate frontend-engineer.
+Activate engineering-frontend-developer.
 Implement order creation and listing flow with loading, error, and empty states.
 Include relevant tests and standard handoff.
 ```
 
-## 6) Validate quality
+## 6) Prepare deployment automation
+
+```text
+Activate engineering-devops-automator.
+Implement CI/CD, deployment checklist, and baseline observability for this scope.
+Attach operational evidence in handoff.
+```
+
+## 7) Validate quality
 
 ```text
 Activate test-engineer.
 Validate acceptance criteria, run applicable tests, and classify PASS or FAIL with evidence.
 ```
 
-## 7) Execute final gate
+## 8) Execute final gate
 
 ```text
 Activate reviewer.

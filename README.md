@@ -10,8 +10,8 @@ Built for execution: technical planning, implementation, validation, standardize
 
 ## What you get
 
-- **76 total agents**:
-- 8 core delivery agents for the main execution flow.
+- **73 total agents**:
+- 5 core governance agents for the main execution flow.
 - 68 additional specialists across 9 divisions.
 - **4 reusable skills** for recurring tasks.
 - **Operational playbooks** for handoff and final review.
@@ -28,10 +28,7 @@ Built for execution: technical planning, implementation, validation, standardize
 │   ├── orchestrator.md
 │   ├── product-planner.md
 │   ├── solution-architect.md
-│   ├── backend-engineer.md
-│   ├── frontend-engineer.md
 │   ├── test-engineer.md
-│   ├── devops-engineer.md
 │   ├── reviewer.md
 │   └── specialists/
 │       ├── README.md
@@ -81,11 +78,11 @@ Follow AGENTS.md, use the standard handoff format, and finish with reviewer.
 flowchart LR
   A["Orchestrator"] --> B["Product Planner"]
   A --> C["Solution Architect"]
-  B --> D["Backend Engineer"]
+  B --> D["Engineering Backend Specialist"]
   C --> D
-  B --> E["Frontend Engineer"]
+  B --> E["Engineering Frontend Specialist"]
   C --> E
-  C --> F["DevOps Engineer"]
+  C --> F["Engineering DevOps Specialist"]
   D --> G["Test Engineer"]
   E --> G
   F --> G
@@ -101,11 +98,9 @@ flowchart LR
 | `orchestrator` | coordinates the end-to-end flow | plan, status, handoff trail |
 | `product-planner` | turns scope into backlog | prioritized tasks with acceptance criteria |
 | `solution-architect` | defines technical direction | architecture, contracts, risks |
-| `backend-engineer` | builds services and business logic | tested backend + QA handoff |
-| `frontend-engineer` | builds UI and user flows | functional interface with tests |
 | `test-engineer` | validates criteria and regressions | PASS/FAIL report with evidence |
-| `devops-engineer` | prepares pipeline and operations | CI/CD, deploy, observability |
 | `reviewer` | final quality gate | APPROVED / CHANGES_REQUESTED / BLOCKED decision |
+| `agents/specialists/engineering/*` | implementation specialists | domain-specific engineering execution |
 
 Specialist catalog index: `agents/specialists/README.md`.
 

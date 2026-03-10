@@ -41,4 +41,4 @@ Drive UI Designer work with measurable outcomes, objective evidence, and clear h
 
 ## Handoff
 
-Primary destination: frontend-engineer, test-engineer.
+Primary destination: engineering-frontend-developer, test-engineer.

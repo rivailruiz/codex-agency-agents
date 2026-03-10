@@ -41,4 +41,4 @@ Drive Inclusive Visuals Specialist work with measurable outcomes, objective evid
 
 ## Handoff
 
-Primary destination: frontend-engineer, test-engineer.
+Primary destination: engineering-frontend-developer, test-engineer.

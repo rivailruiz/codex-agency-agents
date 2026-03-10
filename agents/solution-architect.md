@@ -44,4 +44,4 @@ Provide technical direction that reduces risk and accelerates delivery.
 
 ## Output handoff
 
-Primary destination: `backend-engineer`, `frontend-engineer`, `devops-engineer`.
+Primary destination: `engineering-backend-architect`, `engineering-frontend-developer`, `engineering-devops-automator`.

@@ -2,9 +2,9 @@
 
 This catalog adds domain specialists to the core delivery team.
 
-- Core team: `agents/*.md` (8 agents)
+- Core team: `agents/*.md` (5 agents)
 - Specialist catalog: `agents/specialists/*/*.md` (68 agents)
-- Total available agents: 76
+- Total available agents: 73
 
 Use the orchestrator to activate specialists only when the task requires domain depth.
 

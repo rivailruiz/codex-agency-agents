@@ -26,7 +26,7 @@ Run the full delivery lifecycle, ensuring sequencing, handoff integrity, and qua
 1. produce a short execution plan with phases and owners
 2. route backlog definition to `product-planner`
 3. route technical direction to `solution-architect`
-4. delegate implementation to engineering agents
+4. delegate implementation to engineering specialists (`agents/specialists/engineering/*`)
 5. send output to `test-engineer`
 6. submit final package to `reviewer`
 7. if rejected, open a focused correction loop

@@ -41,4 +41,4 @@ Drive UX Architect work with measurable outcomes, objective evidence, and clear 
 
 ## Handoff
 
-Primary destination: frontend-engineer, test-engineer.
+Primary destination: engineering-frontend-developer, test-engineer.
