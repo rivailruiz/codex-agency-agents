@@ -10,6 +10,7 @@ Versao redesenhada para Codex da ideia de agencia multiagente orientada a entreg
 - padrao formal de handoff entre agentes
 - fluxo de revisao final com reviewer
 - prompts prontos para uso
+- instalador para aplicar o kit em outros projetos
 
 ## Estrutura
 
@@ -34,6 +35,9 @@ Versao redesenhada para Codex da ideia de agencia multiagente orientada a entreg
 ├── playbooks/
 │   ├── handoff-standard.md
 │   └── final-review-flow.md
+├── scripts/
+│   ├── install.sh
+│   └── uninstall.sh
 └── examples/
     └── prompts/
         ├── quickstart.md
@@ -47,6 +51,39 @@ Versao redesenhada para Codex da ideia de agencia multiagente orientada a entreg
 3. Acione os demais agentes conforme fase da entrega.
 4. Use `playbooks/handoff-standard.md` em todo repasse.
 5. Passe obrigatoriamente por `agents/reviewer.md` usando `playbooks/final-review-flow.md`.
+
+## Instalacao em outro projeto
+
+1. Clone este repositorio em qualquer pasta local.
+2. Rode o instalador apontando para o projeto de destino.
+
+```bash
+./scripts/install.sh --target /caminho/do/projeto
+```
+
+Com bootstrap no `AGENTS.md` do projeto destino:
+
+```bash
+./scripts/install.sh --target /caminho/do/projeto --bootstrap-agents
+```
+
+Modo symlink (facilita atualizar em varios projetos):
+
+```bash
+./scripts/install.sh --target /caminho/do/projeto --mode symlink --bootstrap-agents
+```
+
+Instalar skills globais no Codex Home (`$CODEX_HOME/skills`):
+
+```bash
+./scripts/install.sh --target /caminho/do/projeto --install-global-skills
+```
+
+Remocao:
+
+```bash
+./scripts/uninstall.sh --target /caminho/do/projeto
+```
 
 ## Fluxo recomendado
 
