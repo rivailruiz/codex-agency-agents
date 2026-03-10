@@ -4,19 +4,21 @@
 [![Multi-Agent](https://img.shields.io/badge/Multi--Agent-Delivery-0ea5e9?style=for-the-badge)](https://github.com/rivailruiz/codex-agency-agents)
 [![Operational Playbooks](https://img.shields.io/badge/Playbooks-Operational-16a34a?style=for-the-badge)](https://github.com/rivailruiz/codex-agency-agents)
 
-Sistema multiagente para software delivery no Codex.
+Multi-agent system for software delivery in Codex.
 
-Foco total em execucao real: planejamento tecnico, implementacao, validacao, handoff padronizado e gate final com reviewer.
+Built for execution: technical planning, implementation, validation, standardized handoffs, and final reviewer gate.
 
-## O que voce ganha
+Portuguese version: `README.pt-BR.md`.
 
-- **8 agentes especializados** para cada etapa critica da entrega.
-- **4 skills reutilizaveis** para acelerar tarefas recorrentes.
-- **playbooks operacionais** de handoff e revisao final.
-- **instalador portavel** para aplicar o kit em qualquer projeto.
-- **prompts prontos** para iniciar sem friccao.
+## What you get
 
-## Estrutura do projeto
+- **8 specialized agents** for the critical delivery stages.
+- **4 reusable skills** for recurring tasks.
+- **Operational playbooks** for handoff and final review.
+- **Portable installer** to apply this kit in any project.
+- **Ready-to-run prompts** for fast onboarding.
+
+## Project structure
 
 ```text
 .
@@ -48,21 +50,21 @@ Foco total em execucao real: planejamento tecnico, implementacao, validacao, han
         └── handoff-and-review.md
 ```
 
-## Quickstart (5 minutos)
+## Quickstart (5 minutes)
 
-1. Leia `AGENTS.md` para entender o modelo de operacao.
-2. Inicie pelo `agents/orchestrator.md` com contexto do projeto.
-3. Rode o ciclo completo: backlog -> arquitetura -> implementacao -> QA -> reviewer.
+1. Read `AGENTS.md` to understand the operating model.
+2. Start with `agents/orchestrator.md` and provide project context.
+3. Run the full loop: backlog -> architecture -> implementation -> QA -> reviewer.
 
-Prompt rapido:
+Quick prompt:
 
 ```text
-Ative o orchestrator deste repositorio.
-Objetivo: implementar [sua feature/projeto].
-Siga AGENTS.md, use handoff padrao e finalize com reviewer.
+Activate the orchestrator from this repository.
+Goal: implement [your feature/project].
+Follow AGENTS.md, use the standard handoff format, and finish with reviewer.
 ```
 
-## Fluxo de entrega
+## Delivery flow
 
 ```mermaid
 flowchart LR
@@ -81,81 +83,81 @@ flowchart LR
   H -->|"CHANGES_REQUESTED / BLOCKED"| A
 ```
 
-## Agentes
+## Agents
 
-| Agente | Papel | Entrega principal |
+| Agent | Role | Main output |
 |---|---|---|
-| `orchestrator` | coordena o fluxo ponta a ponta | plano, status, trilha de handoffs |
-| `product-planner` | transforma escopo em backlog | tarefas priorizadas com aceite |
-| `solution-architect` | define direcao tecnica | arquitetura, contratos, riscos |
-| `backend-engineer` | implementa servicos e regras de negocio | backend testado e handoff para QA |
-| `frontend-engineer` | implementa UI e fluxos de usuario | interface funcional com testes |
-| `test-engineer` | valida criterios e regressao | relatorio PASS/FAIL com evidencias |
-| `devops-engineer` | prepara pipeline e operacao | CI/CD, deploy e observabilidade |
-| `reviewer` | gate final de qualidade | decisao APPROVED / CHANGES_REQUESTED / BLOCKED |
+| `orchestrator` | coordinates the end-to-end flow | plan, status, handoff trail |
+| `product-planner` | turns scope into backlog | prioritized tasks with acceptance criteria |
+| `solution-architect` | defines technical direction | architecture, contracts, risks |
+| `backend-engineer` | builds services and business logic | tested backend + QA handoff |
+| `frontend-engineer` | builds UI and user flows | functional interface with tests |
+| `test-engineer` | validates criteria and regressions | PASS/FAIL report with evidence |
+| `devops-engineer` | prepares pipeline and operations | CI/CD, deploy, observability |
+| `reviewer` | final quality gate | APPROVED / CHANGES_REQUESTED / BLOCKED decision |
 
-## Skills reutilizaveis
+## Reusable skills
 
-| Skill | Para que serve |
+| Skill | Purpose |
 |---|---|
-| `spec-to-tasks` | converte requisitos em backlog tecnico testavel |
-| `code-implementation` | guia implementacao incremental com evidencia |
-| `quality-gate` | aplica validacao objetiva PASS/FAIL pre-review |
-| `release-readiness` | decide READY/NOT_READY para release |
+| `spec-to-tasks` | converts requirements into testable technical backlog |
+| `code-implementation` | guides incremental implementation with evidence |
+| `quality-gate` | runs objective PASS/FAIL validation before reviewer |
+| `release-readiness` | decides READY/NOT_READY for release |
 
-## Instalacao em outro projeto
+## Install in another project
 
-Instalar o kit dentro de outro repositorio:
-
-```bash
-./scripts/install.sh --target /caminho/do/projeto
-```
-
-Instalar e adicionar ponteiro no `AGENTS.md` do projeto destino:
+Install this kit inside another repository:
 
 ```bash
-./scripts/install.sh --target /caminho/do/projeto --bootstrap-agents
+./scripts/install.sh --target /path/to/project
 ```
 
-Instalar em modo symlink (ideal para manter atualizacoes centralizadas):
+Install and add an `AGENTS.md` pointer block in the target project:
 
 ```bash
-./scripts/install.sh --target /caminho/do/projeto --mode symlink --bootstrap-agents
+./scripts/install.sh --target /path/to/project --bootstrap-agents
 ```
 
-Instalar skills globais no Codex Home (`$CODEX_HOME/skills`):
+Install in symlink mode (best for centralized updates):
 
 ```bash
-./scripts/install.sh --target /caminho/do/projeto --install-global-skills
+./scripts/install.sh --target /path/to/project --mode symlink --bootstrap-agents
 ```
 
-Desinstalar:
+Install global skills into Codex Home (`$CODEX_HOME/skills`):
 
 ```bash
-./scripts/uninstall.sh --target /caminho/do/projeto
+./scripts/install.sh --target /path/to/project --install-global-skills
 ```
 
-## Playbooks operacionais
+Uninstall:
 
-- `playbooks/handoff-standard.md`: contrato de handoff entre agentes.
-- `playbooks/final-review-flow.md`: gate final obrigatorio com reviewer.
+```bash
+./scripts/uninstall.sh --target /path/to/project
+```
 
-Regra de ouro: **sem evidencia, sem conclusao**.
+## Operational playbooks
 
-## Exemplos de prompt
+- `playbooks/handoff-standard.md`: agent-to-agent handoff contract.
+- `playbooks/final-review-flow.md`: mandatory final review gate.
+
+Golden rule: **no evidence, no completion**.
+
+## Prompt examples
 
 - `examples/prompts/quickstart.md`
 - `examples/prompts/handoff-and-review.md`
 
-## Quando usar este projeto
+## Best-fit scenarios
 
-- Squad pequeno que precisa entregar com previsibilidade.
-- Projeto novo que precisa de disciplina de execucao desde o dia 1.
-- Time que quer reduzir retrabalho em handoffs e revisoes finais.
+- Small teams that need predictable delivery.
+- New projects that need execution discipline from day one.
+- Teams that want less rework in handoffs and final reviews.
 
-## Resultado esperado
+## Expected outcomes
 
-- Menos ambiguidade entre planejamento e implementacao.
-- Melhor rastreabilidade de decisoes e riscos.
-- Revisao final mais objetiva e confiavel.
-- Entregas mais frequentes com menor retrabalho.
+- Less ambiguity between planning and implementation.
+- Better traceability for decisions and risks.
+- More objective and reliable final reviews.
+- Faster delivery cycles with lower rework.
