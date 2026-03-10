@@ -104,6 +104,20 @@ flowchart LR
 
 Specialist catalog index: `agents/specialists/README.md`.
 
+## Specialists (by division)
+
+| Division | Count | Specialists |
+|---|---:|---|
+| `design` | 8 | `design-brand-guardian`<br>`design-image-prompt-engineer`<br>`design-inclusive-visuals-specialist`<br>`design-ui-designer`<br>`design-ux-architect`<br>`design-ux-researcher`<br>`design-visual-storyteller`<br>`design-whimsy-injector` |
+| `engineering` | 11 | `engineering-ai-engineer`<br>`engineering-autonomous-optimization-architect`<br>`engineering-backend-architect`<br>`engineering-data-engineer`<br>`engineering-devops-automator`<br>`engineering-frontend-developer`<br>`engineering-mobile-app-builder`<br>`engineering-rapid-prototyper`<br>`engineering-security-engineer`<br>`engineering-senior-developer`<br>`engineering-technical-writer` |
+| `marketing` | 11 | `marketing-app-store-optimizer`<br>`marketing-content-creator`<br>`marketing-growth-hacker`<br>`marketing-instagram-curator`<br>`marketing-reddit-community-builder`<br>`marketing-social-media-strategist`<br>`marketing-tiktok-strategist`<br>`marketing-twitter-engager`<br>`marketing-wechat-official-account`<br>`marketing-xiaohongshu-specialist`<br>`marketing-zhihu-strategist` |
+| `product` | 4 | `product-behavioral-nudge-engine`<br>`product-feedback-synthesizer`<br>`product-sprint-prioritizer`<br>`product-trend-researcher` |
+| `project-management` | 5 | `project-management-experiment-tracker`<br>`project-management-project-shepherd`<br>`project-management-studio-operations`<br>`project-management-studio-producer`<br>`project-manager-senior` |
+| `support` | 6 | `support-analytics-reporter`<br>`support-executive-summary-generator`<br>`support-finance-tracker`<br>`support-infrastructure-maintainer`<br>`support-legal-compliance-checker`<br>`support-support-responder` |
+| `testing` | 8 | `testing-accessibility-auditor`<br>`testing-api-tester`<br>`testing-evidence-collector`<br>`testing-performance-benchmarker`<br>`testing-reality-checker`<br>`testing-test-results-analyzer`<br>`testing-tool-evaluator`<br>`testing-workflow-optimizer` |
+| `spatial-computing` | 6 | `macos-spatial-metal-engineer`<br>`terminal-integration-specialist`<br>`visionos-spatial-engineer`<br>`xr-cockpit-interaction-specialist`<br>`xr-immersive-developer`<br>`xr-interface-architect` |
+| `specialized` | 9 | `agentic-identity-trust`<br>`agents-orchestrator`<br>`data-analytics-reporter`<br>`data-consolidation-agent`<br>`lsp-index-engineer`<br>`report-distribution-agent`<br>`sales-data-extraction-agent`<br>`specialized-cultural-intelligence-strategist`<br>`specialized-developer-advocate` |
+
 ## Reusable skills
 
 | Skill | Purpose |
