@@ -10,7 +10,9 @@ Foco total em execucao real: planejamento tecnico, implementacao, validacao, han
 
 ## O que voce ganha
 
-- **8 agentes especializados** para cada etapa critica da entrega.
+- **76 agentes no total**:
+- 8 agentes core para o fluxo principal de entrega.
+- 68 especialistas adicionais distribuidos em 9 divisoes.
 - **4 skills reutilizaveis** para acelerar tarefas recorrentes.
 - **playbooks operacionais** de handoff e revisao final.
 - **instalador portavel** para aplicar o kit em qualquer projeto.
@@ -30,7 +32,18 @@ Foco total em execucao real: planejamento tecnico, implementacao, validacao, han
 │   ├── frontend-engineer.md
 │   ├── test-engineer.md
 │   ├── devops-engineer.md
-│   └── reviewer.md
+│   ├── reviewer.md
+│   └── specialists/
+│       ├── README.md
+│       ├── design/*.md
+│       ├── engineering/*.md
+│       ├── marketing/*.md
+│       ├── product/*.md
+│       ├── project-management/*.md
+│       ├── support/*.md
+│       ├── testing/*.md
+│       ├── spatial-computing/*.md
+│       └── specialized/*.md
 ├── skills/
 │   ├── spec-to-tasks/SKILL.md
 │   ├── code-implementation/SKILL.md
@@ -93,6 +106,8 @@ flowchart LR
 | `test-engineer` | valida criterios e regressao | relatorio PASS/FAIL com evidencias |
 | `devops-engineer` | prepara pipeline e operacao | CI/CD, deploy e observabilidade |
 | `reviewer` | gate final de qualidade | decisao APPROVED / CHANGES_REQUESTED / BLOCKED |
+
+Indice do catalogo de especialistas: `agents/specialists/README.md`.
 
 ## Skills reutilizaveis
 

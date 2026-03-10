@@ -21,12 +21,13 @@ Entregar software pronto para produção com fluxo explícito:
 
 ## Estrutura
 
-- `agents/`: agentes especializados.
+- `agents/`: agentes principais e especialistas.
+- `agents/specialists/`: catalogo estendido de especialistas por divisao.
 - `skills/`: skills reutilizáveis (com `SKILL.md`).
 - `playbooks/`: protocolo de handoff e fluxo de revisão.
 - `examples/prompts/`: prompts prontos para ativação.
 
-## Agentes Disponíveis
+## Agentes Principais (Core 8)
 
 - `orchestrator`: coordena o fluxo ponta a ponta.
 - `product-planner`: converte objetivo de produto em backlog executável.
@@ -36,6 +37,13 @@ Entregar software pronto para produção com fluxo explícito:
 - `test-engineer`: valida funcionalidade, regressao e qualidade.
 - `devops-engineer`: pipeline, deploy e observabilidade.
 - `reviewer`: gate final de qualidade para liberar entrega.
+
+## Catalogo Estendido (68 especialistas)
+
+- Local: `agents/specialists/`
+- Divisoes: design, engineering, marketing, product, project-management, support, testing, spatial-computing, specialized.
+- Indice: `agents/specialists/README.md`
+- Regra de uso: ativar sob demanda para tarefas de dominio especifico, mantendo o `orchestrator` como coordenador central.
 
 ## Modo de Operacao
 

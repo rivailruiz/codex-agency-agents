@@ -12,7 +12,9 @@ Portuguese version: `README.pt-BR.md`.
 
 ## What you get
 
-- **8 specialized agents** for the critical delivery stages.
+- **76 total agents**:
+- 8 core delivery agents for the main execution flow.
+- 68 additional specialists across 9 divisions.
 - **4 reusable skills** for recurring tasks.
 - **Operational playbooks** for handoff and final review.
 - **Portable installer** to apply this kit in any project.
@@ -32,7 +34,18 @@ Portuguese version: `README.pt-BR.md`.
 │   ├── frontend-engineer.md
 │   ├── test-engineer.md
 │   ├── devops-engineer.md
-│   └── reviewer.md
+│   ├── reviewer.md
+│   └── specialists/
+│       ├── README.md
+│       ├── design/*.md
+│       ├── engineering/*.md
+│       ├── marketing/*.md
+│       ├── product/*.md
+│       ├── project-management/*.md
+│       ├── support/*.md
+│       ├── testing/*.md
+│       ├── spatial-computing/*.md
+│       └── specialized/*.md
 ├── skills/
 │   ├── spec-to-tasks/SKILL.md
 │   ├── code-implementation/SKILL.md
@@ -95,6 +108,8 @@ flowchart LR
 | `test-engineer` | validates criteria and regressions | PASS/FAIL report with evidence |
 | `devops-engineer` | prepares pipeline and operations | CI/CD, deploy, observability |
 | `reviewer` | final quality gate | APPROVED / CHANGES_REQUESTED / BLOCKED decision |
+
+Specialist catalog index: `agents/specialists/README.md`.
 
 ## Reusable skills
 
